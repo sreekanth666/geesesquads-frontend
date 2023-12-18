@@ -31,7 +31,7 @@ function ManageCategory() {
         <h2>Add Categories</h2>
         <div className='d-flex mb-3'>
             <input type="text" placeholder='Enter category name' className='form-control w-50' onChange={(e) => setCategory(e.target.value)} />
-            <button className='ms-3 btn btn-primary' onClick={(e) => {handleCreateCategory(e)}}>Create</button>
+            <button className='ms-3 btn btn-primary' onClick={(e) => {handleCreateCategory(e)}}>Create Category</button>
         </div>
 
         <div className='d-flex'>
