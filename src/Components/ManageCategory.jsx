@@ -29,10 +29,16 @@ function ManageCategory() {
   return (
     <div>
         <h2>Add Categories</h2>
-        <div className='d-flex'>
-            <input type="text" className='form-control w-50' onChange={(e) => setCategory(e.target.value)} />
+        <div className='d-flex mb-3'>
+            <input type="text" placeholder='Enter category name' className='form-control w-50' onChange={(e) => setCategory(e.target.value)} />
             <button className='ms-3 btn btn-primary' onClick={(e) => {handleCreateCategory(e)}}>Create</button>
         </div>
+
+        <div className='d-flex'>
+            <input type="text" placeholder='Enter sub-category' className='form-control w-50' onChange={(e) => setCategory(e.target.value)} />
+            <button className='ms-3 btn btn-primary'>Add</button>
+        </div>
+        <button className='ms-3 btn btn-primary' onClick={(e) => {handleCreateCategory(e)}}>Create</button>
     </div>
 
   )
